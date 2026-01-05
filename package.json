@@ -1,0 +1,17 @@
+{
+  "name": "multi-model-research-orchestrator",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A provider-agnostic research workflow that compares independent model perspectives.",
+  "type": "module",
+  "bin": {
+    "research-orchestrator": "bin/research.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "research:mock": "node bin/research.js \"Should cities require landlords to disclose utility activation risks?\" --mock"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
