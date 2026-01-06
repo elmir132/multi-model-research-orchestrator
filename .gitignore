@@ -1,0 +1,5 @@
+node_modules/
+.env
+research-output/
+.DS_Store
+coverage/
