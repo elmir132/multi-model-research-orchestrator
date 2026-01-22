@@ -64,6 +64,10 @@ research-output/can-this-workflow-be-audited/
 
 With one provider the synthesis is `04-synthesis.md`. The comparison needs at least two providers.
 
+The synthesis from a real run, with two Mistral models answering three perspectives each (the full files are in [`docs/example-live-mistral`](docs/example-live-mistral)):
+
+![Synthesis tables from a live run: provider coverage and agreement per perspective](docs/synthesis-example.png)
+
 ## Design choices
 
 - Sends every configured provider through every perspective.
