@@ -37,7 +37,7 @@ test("synthesis reports a real disagreement", () => {
 });
 
 test("providersFromEnv exposes only configured OpenAI-compatible providers", () => {
-  const providers = providersFromEnv({ OPENAI_API_KEY: "one", OPENAI_MODEL: "model-a", GEMINI_API_KEY: "ignored", GROQ_API_KEY: "two" });
+  const providers = providersFromEnv({ OPENAI_API_KEY: "one", OPENAI_MODEL: "model-a", SOME_OTHER_API_KEY: "ignored", GROQ_API_KEY: "two" });
   assert.deepEqual(providers.map((provider) => provider.name), ["openai", "groq"]);
 });
 
