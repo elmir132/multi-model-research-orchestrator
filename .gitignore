@@ -3,3 +3,4 @@ node_modules/
 research-output/
 .DS_Store
 coverage/
+.research-cache/
