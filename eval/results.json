@@ -1,0 +1,293 @@
+{
+  "note": "Hand-written claim pairs labelled by me before running the heuristic. 'agree' means both claims make the same assessment; 'disagree' means they are opposed or reach different conclusions. 40 pairs is a small sample written by one person.",
+  "pairs": 40,
+  "accuracy": 0.375,
+  "disagreement": {
+    "precision": 0.368,
+    "recall": 0.35
+  },
+  "confusion": {
+    "truePositive": 7,
+    "falsePositive": 12,
+    "falseNegative": 13,
+    "trueNegative": 8
+  },
+  "byKind": {
+    "near-identical": {
+      "pairs": 6,
+      "correct": 6
+    },
+    "paraphrase": {
+      "pairs": 7,
+      "correct": 2
+    },
+    "low-overlap-paraphrase": {
+      "pairs": 7,
+      "correct": 0
+    },
+    "explicit-negation": {
+      "pairs": 6,
+      "correct": 5
+    },
+    "antonym": {
+      "pairs": 8,
+      "correct": 0
+    },
+    "different-conclusion": {
+      "pairs": 6,
+      "correct": 2
+    }
+  },
+  "misses": [
+    {
+      "id": 8,
+      "kind": "paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0.15,
+      "a": "Remote work lowers commuting costs for employees.",
+      "b": "Employees spend less money getting to work when they work remotely."
+    },
+    {
+      "id": 9,
+      "kind": "paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0.22,
+      "a": "The tool will be useful to people who move to a new city.",
+      "b": "Newcomers to a city are likely to benefit from this tool."
+    },
+    {
+      "id": 11,
+      "kind": "paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0.08,
+      "a": "The main risk is that users over-trust automated summaries.",
+      "b": "A key danger is people relying too heavily on machine-written summaries."
+    },
+    {
+      "id": 12,
+      "kind": "paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0.07,
+      "a": "Solar panels pay for themselves within a decade in sunny regions.",
+      "b": "In sunny areas, photovoltaic systems recoup their cost in under ten years."
+    },
+    {
+      "id": 13,
+      "kind": "paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "one claim is negated, the other is not",
+      "score": 0.25,
+      "a": "Strong passwords alone cannot stop phishing.",
+      "b": "Phishing attacks succeed even against users who choose strong passwords."
+    },
+    {
+      "id": 14,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0.08,
+      "a": "Electric vehicles are becoming cheaper to own than petrol cars.",
+      "b": "Running an EV now costs less overall than running a gasoline vehicle."
+    },
+    {
+      "id": 15,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "one claim is negated, the other is not",
+      "score": 0,
+      "a": "The startup will likely struggle to raise funding in this climate.",
+      "b": "Investors are unlikely to be eager to back this company at present."
+    },
+    {
+      "id": 16,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0,
+      "a": "Public transit investment shortens commutes in dense cities.",
+      "b": "Putting money into buses and trains cuts travel times where people live close together."
+    },
+    {
+      "id": 17,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "one claim is negated, the other is not",
+      "score": 0,
+      "a": "Sleep deprivation harms memory.",
+      "b": "Not getting enough rest impairs recall."
+    },
+    {
+      "id": 18,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0,
+      "a": "The patch fixes the vulnerability.",
+      "b": "The security flaw is resolved by this update."
+    },
+    {
+      "id": 19,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0,
+      "a": "Larger datasets generally improve model accuracy.",
+      "b": "More training examples tend to make predictions better."
+    },
+    {
+      "id": 20,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "predicted": "disagree",
+      "reason": "low wording overlap",
+      "score": 0,
+      "a": "The policy will be hard to enforce.",
+      "b": "Enforcement of the rule is going to be difficult."
+    },
+    {
+      "id": 25,
+      "kind": "explicit-negation",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.86,
+      "a": "Cities can require this disclosure without legal risk.",
+      "b": "Cities cannot require this disclosure without legal risk."
+    },
+    {
+      "id": 27,
+      "kind": "antonym",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.4,
+      "a": "The proposal is practical and low risk.",
+      "b": "The proposal is impractical and high risk."
+    },
+    {
+      "id": 28,
+      "kind": "antonym",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.75,
+      "a": "Adoption will increase over the next five years.",
+      "b": "Adoption will decrease over the next five years."
+    },
+    {
+      "id": 29,
+      "kind": "antonym",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.6,
+      "a": "The method is reliable on noisy data.",
+      "b": "The method is fragile on noisy data."
+    },
+    {
+      "id": 30,
+      "kind": "antonym",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.5,
+      "a": "The market is growing rapidly.",
+      "b": "The market is shrinking rapidly."
+    },
+    {
+      "id": 31,
+      "kind": "antonym",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.67,
+      "a": "The regulation will help small landlords.",
+      "b": "The regulation will harm small landlords."
+    },
+    {
+      "id": 32,
+      "kind": "antonym",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.6,
+      "a": "Latency is low enough for real-time use.",
+      "b": "Latency is too high for real-time use."
+    },
+    {
+      "id": 33,
+      "kind": "antonym",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.5,
+      "a": "The system is secure against known attacks.",
+      "b": "The system is vulnerable to known attacks."
+    },
+    {
+      "id": 34,
+      "kind": "antonym",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.67,
+      "a": "Costs fell sharply last year.",
+      "b": "Costs rose sharply last year."
+    },
+    {
+      "id": 35,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.33,
+      "a": "The main risk is technical failure of the hardware.",
+      "b": "The main risk is user privacy rather than hardware."
+    },
+    {
+      "id": 37,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.5,
+      "a": "Subsidies are the best way to increase adoption.",
+      "b": "Education campaigns are the best way to increase adoption."
+    },
+    {
+      "id": 39,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 1,
+      "a": "Prioritise accuracy over speed in this application.",
+      "b": "Prioritise speed over accuracy in this application."
+    },
+    {
+      "id": 40,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "predicted": "agree",
+      "reason": "similar wording",
+      "score": 0.67,
+      "a": "Releasing the code publicly will make the tool safer.",
+      "b": "Releasing the code publicly will make the tool less safe."
+    }
+  ]
+}

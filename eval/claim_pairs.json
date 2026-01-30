@@ -1,0 +1,285 @@
+{
+  "description": "Hand-written claim pairs labelled by me before running the heuristic. 'agree' means both claims make the same assessment; 'disagree' means they are opposed or reach different conclusions. 40 pairs is a small sample written by one person.",
+  "pairs": [
+    {
+      "id": 1,
+      "kind": "near-identical",
+      "label": "agree",
+      "a": "The workflow is technically feasible with current tools.",
+      "b": "The workflow is technically feasible using current tools."
+    },
+    {
+      "id": 2,
+      "kind": "near-identical",
+      "label": "agree",
+      "a": "Requiring landlords to disclose utility risks would improve transparency for renters.",
+      "b": "Requiring landlords to disclose utility risks improves transparency for renters."
+    },
+    {
+      "id": 3,
+      "kind": "near-identical",
+      "label": "agree",
+      "a": "Agreement between models is not evidence that an answer is true.",
+      "b": "Agreement between models should not be treated as evidence that an answer is true."
+    },
+    {
+      "id": 4,
+      "kind": "near-identical",
+      "label": "agree",
+      "a": "The main adoption barrier is the cost of integrating with existing systems.",
+      "b": "The main barrier to adoption is the cost of integrating with existing systems."
+    },
+    {
+      "id": 5,
+      "kind": "near-identical",
+      "label": "agree",
+      "a": "Small neural networks can run in real time on microcontrollers.",
+      "b": "Small neural networks can run in real time on a microcontroller."
+    },
+    {
+      "id": 6,
+      "kind": "near-identical",
+      "label": "agree",
+      "a": "The proposal is reasonable but needs a pilot before scaling.",
+      "b": "The proposal is reasonable, though a pilot is needed before it scales."
+    },
+    {
+      "id": 7,
+      "kind": "paraphrase",
+      "label": "agree",
+      "a": "Rent control reduces housing supply over the long run.",
+      "b": "Over time, rent caps shrink the amount of housing available."
+    },
+    {
+      "id": 8,
+      "kind": "paraphrase",
+      "label": "agree",
+      "a": "Remote work lowers commuting costs for employees.",
+      "b": "Employees spend less money getting to work when they work remotely."
+    },
+    {
+      "id": 9,
+      "kind": "paraphrase",
+      "label": "agree",
+      "a": "The tool will be useful to people who move to a new city.",
+      "b": "Newcomers to a city are likely to benefit from this tool."
+    },
+    {
+      "id": 10,
+      "kind": "paraphrase",
+      "label": "agree",
+      "a": "Open-source models are catching up to proprietary ones on most benchmarks.",
+      "b": "On most benchmarks, freely available models are closing the gap with closed models."
+    },
+    {
+      "id": 11,
+      "kind": "paraphrase",
+      "label": "agree",
+      "a": "The main risk is that users over-trust automated summaries.",
+      "b": "A key danger is people relying too heavily on machine-written summaries."
+    },
+    {
+      "id": 12,
+      "kind": "paraphrase",
+      "label": "agree",
+      "a": "Solar panels pay for themselves within a decade in sunny regions.",
+      "b": "In sunny areas, photovoltaic systems recoup their cost in under ten years."
+    },
+    {
+      "id": 13,
+      "kind": "paraphrase",
+      "label": "agree",
+      "a": "Strong passwords alone cannot stop phishing.",
+      "b": "Phishing attacks succeed even against users who choose strong passwords."
+    },
+    {
+      "id": 14,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "a": "Electric vehicles are becoming cheaper to own than petrol cars.",
+      "b": "Running an EV now costs less overall than running a gasoline vehicle."
+    },
+    {
+      "id": 15,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "a": "The startup will likely struggle to raise funding in this climate.",
+      "b": "Investors are unlikely to be eager to back this company at present."
+    },
+    {
+      "id": 16,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "a": "Public transit investment shortens commutes in dense cities.",
+      "b": "Putting money into buses and trains cuts travel times where people live close together."
+    },
+    {
+      "id": 17,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "a": "Sleep deprivation harms memory.",
+      "b": "Not getting enough rest impairs recall."
+    },
+    {
+      "id": 18,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "a": "The patch fixes the vulnerability.",
+      "b": "The security flaw is resolved by this update."
+    },
+    {
+      "id": 19,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "a": "Larger datasets generally improve model accuracy.",
+      "b": "More training examples tend to make predictions better."
+    },
+    {
+      "id": 20,
+      "kind": "low-overlap-paraphrase",
+      "label": "agree",
+      "a": "The policy will be hard to enforce.",
+      "b": "Enforcement of the rule is going to be difficult."
+    },
+    {
+      "id": 21,
+      "kind": "explicit-negation",
+      "label": "disagree",
+      "a": "The approach is feasible at scale.",
+      "b": "The approach is not feasible at scale."
+    },
+    {
+      "id": 22,
+      "kind": "explicit-negation",
+      "label": "disagree",
+      "a": "The model generalises well to new devices.",
+      "b": "The model does not generalise to new devices."
+    },
+    {
+      "id": 23,
+      "kind": "explicit-negation",
+      "label": "disagree",
+      "a": "Users will adopt the tool quickly.",
+      "b": "Users are unlikely to adopt the tool without incentives."
+    },
+    {
+      "id": 24,
+      "kind": "explicit-negation",
+      "label": "disagree",
+      "a": "The evidence supports the claim.",
+      "b": "The evidence does not support the claim."
+    },
+    {
+      "id": 25,
+      "kind": "explicit-negation",
+      "label": "disagree",
+      "a": "Cities can require this disclosure without legal risk.",
+      "b": "Cities cannot require this disclosure without legal risk."
+    },
+    {
+      "id": 26,
+      "kind": "explicit-negation",
+      "label": "disagree",
+      "a": "The cost is affordable for small businesses.",
+      "b": "The cost isn't affordable for small businesses."
+    },
+    {
+      "id": 27,
+      "kind": "antonym",
+      "label": "disagree",
+      "a": "The proposal is practical and low risk.",
+      "b": "The proposal is impractical and high risk."
+    },
+    {
+      "id": 28,
+      "kind": "antonym",
+      "label": "disagree",
+      "a": "Adoption will increase over the next five years.",
+      "b": "Adoption will decrease over the next five years."
+    },
+    {
+      "id": 29,
+      "kind": "antonym",
+      "label": "disagree",
+      "a": "The method is reliable on noisy data.",
+      "b": "The method is fragile on noisy data."
+    },
+    {
+      "id": 30,
+      "kind": "antonym",
+      "label": "disagree",
+      "a": "The market is growing rapidly.",
+      "b": "The market is shrinking rapidly."
+    },
+    {
+      "id": 31,
+      "kind": "antonym",
+      "label": "disagree",
+      "a": "The regulation will help small landlords.",
+      "b": "The regulation will harm small landlords."
+    },
+    {
+      "id": 32,
+      "kind": "antonym",
+      "label": "disagree",
+      "a": "Latency is low enough for real-time use.",
+      "b": "Latency is too high for real-time use."
+    },
+    {
+      "id": 33,
+      "kind": "antonym",
+      "label": "disagree",
+      "a": "The system is secure against known attacks.",
+      "b": "The system is vulnerable to known attacks."
+    },
+    {
+      "id": 34,
+      "kind": "antonym",
+      "label": "disagree",
+      "a": "Costs fell sharply last year.",
+      "b": "Costs rose sharply last year."
+    },
+    {
+      "id": 35,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "a": "The main risk is technical failure of the hardware.",
+      "b": "The main risk is user privacy rather than hardware."
+    },
+    {
+      "id": 36,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "a": "Pilot the idea in one city before expanding.",
+      "b": "Launch nationwide immediately to capture the market."
+    },
+    {
+      "id": 37,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "a": "Subsidies are the best way to increase adoption.",
+      "b": "Education campaigns are the best way to increase adoption."
+    },
+    {
+      "id": 38,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "a": "The study is too small to support firm conclusions.",
+      "b": "The study's results are conclusive."
+    },
+    {
+      "id": 39,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "a": "Prioritise accuracy over speed in this application.",
+      "b": "Prioritise speed over accuracy in this application."
+    },
+    {
+      "id": 40,
+      "kind": "different-conclusion",
+      "label": "disagree",
+      "a": "Releasing the code publicly will make the tool safer.",
+      "b": "Releasing the code publicly will make the tool less safe."
+    }
+  ]
+}

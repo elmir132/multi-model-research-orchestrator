@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "node --test",
-    "research:mock": "node bin/research.js \"Should cities require landlords to disclose utility activation risks?\" --mock"
+    "research:mock": "node bin/research.js \"Should cities require landlords to disclose utility activation risks?\" --mock",
+    "eval": "node scripts/eval-agreement.js"
   },
   "engines": {
     "node": ">=20"
