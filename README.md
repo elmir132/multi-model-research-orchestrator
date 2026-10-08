@@ -76,7 +76,7 @@ With one provider the synthesis is `04-synthesis.md`. The comparison needs at le
 
 ## Limitations
 
-This is a research workflow prototype, not an autonomous fact-checker. The agreement check is a heuristic: it misses antonyms and paraphrases, and it can flag an unrelated negation elsewhere in a claim. The OpenAI, Groq and Mistral adapters are tested against a mocked `fetch`, not against the live APIs (a first live Mistral attempt was rejected with HTTP 429 because the key had no request quota, so the Mistral path is unverified live). It does not browse sources, judge citation quality, guarantee factual agreement, or replace domain expertise. Live model availability, pricing, and output quality depend on the configured provider.
+This is a research workflow prototype, not an autonomous fact-checker. The agreement check is a heuristic: it misses antonyms and paraphrases, and it can flag an unrelated negation elsewhere in a claim. The OpenAI, Groq and Mistral adapters are tested against a mocked `fetch`, not against the live APIs (the Mistral path was also run live on 4 questions, 24 of 24 responses succeeded; the output of one run is in `docs/example-live-mistral/`, unedited and unverified model output). It does not browse sources, judge citation quality, guarantee factual agreement, or replace domain expertise. Live model availability, pricing, and output quality depend on the configured provider.
 
 ## Tests
 
