@@ -44,7 +44,7 @@ export OPENAI_MODEL="gpt-4o-mini"
 node bin/research.js "What makes a useful student housing data tool?"
 ```
 
-The current implementation supports OpenAI-compatible endpoints for OpenAI and Groq. Provider adapters are intentionally small so another endpoint can be added without changing the orchestration or output format.
+The current implementation supports OpenAI-compatible endpoints for OpenAI, Groq and Mistral. A single `MISTRAL_API_KEY` configures two providers, `mistral` (`MISTRAL_MODEL`, default `mistral-medium-latest`) and `mistral-small` (`MISTRAL_SMALL_MODEL`, default `mistral-small-latest`), so one key is enough for a real comparison. Provider adapters are intentionally small so another endpoint can be added without changing the orchestration or output format.
 
 ## Output
 
@@ -76,7 +76,7 @@ With one provider the synthesis is `04-synthesis.md`. The comparison needs at le
 
 ## Limitations
 
-This is a research workflow prototype, not an autonomous fact-checker. The agreement check is a heuristic: it misses antonyms and paraphrases, and it can flag an unrelated negation elsewhere in a claim. The OpenAI and Groq adapters are tested against a mocked `fetch`, not against the live APIs. It does not browse sources, judge citation quality, guarantee factual agreement, or replace domain expertise. Live model availability, pricing, and output quality depend on the configured provider.
+This is a research workflow prototype, not an autonomous fact-checker. The agreement check is a heuristic: it misses antonyms and paraphrases, and it can flag an unrelated negation elsewhere in a claim. The OpenAI, Groq and Mistral adapters are tested against a mocked `fetch`, not against the live APIs (a first live Mistral attempt was rejected with HTTP 429 because the key had no request quota, so the Mistral path is unverified live). It does not browse sources, judge citation quality, guarantee factual agreement, or replace domain expertise. Live model availability, pricing, and output quality depend on the configured provider.
 
 ## Tests
 
@@ -84,7 +84,7 @@ This is a research workflow prototype, not an autonomous fact-checker. The agree
 npm test
 ```
 
-The 18 tests cover safe slugs, structured prompts, offline execution, provider coverage, negation and agreement detection, the claims table, table escaping, output file naming, environment configuration, authenticated requests, HTTP errors, empty responses, timeouts, and retries.
+The 20 tests cover safe slugs, structured prompts, offline execution, provider coverage, negation and agreement detection, the claims table, table escaping, output file naming, environment configuration, authenticated requests, HTTP errors, empty responses, timeouts, and retries.
 
 ## AI assistance
 

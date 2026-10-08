@@ -1,6 +1,10 @@
 const openAiDefaults = {
   openai: ["https://api.openai.com/v1", "OPENAI_API_KEY", "OPENAI_MODEL", "gpt-4o-mini"],
-  groq: ["https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "llama-3.3-70b-versatile"]
+  groq: ["https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "llama-3.3-70b-versatile"],
+  // Mistral's API is OpenAI-compatible. One key gives two providers (a medium and a small model)
+  // so a single credential is enough to see the models compare against each other.
+  mistral: ["https://api.mistral.ai/v1", "MISTRAL_API_KEY", "MISTRAL_MODEL", "mistral-medium-latest"],
+  "mistral-small": ["https://api.mistral.ai/v1", "MISTRAL_API_KEY", "MISTRAL_SMALL_MODEL", "mistral-small-latest"]
 };
 
 const MOCK_CLAIMS = {

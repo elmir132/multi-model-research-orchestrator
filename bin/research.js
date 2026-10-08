@@ -13,7 +13,7 @@ if (!topic) {
 
 const providers = mock ? mockProviders() : providersFromEnv();
 if (!providers.length) {
-  console.error("No provider credentials found. Use --mock or configure OPENAI_API_KEY/GROQ_API_KEY.");
+  console.error("No provider credentials found. Use --mock or configure OPENAI_API_KEY, GROQ_API_KEY or MISTRAL_API_KEY.");
   process.exit(2);
 }
 

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { OpenAICompatibleProvider } from "../src/providers.js";
+import { OpenAICompatibleProvider, providersFromEnv } from "../src/providers.js";
 
 function response(status, body) {
   return { ok: status >= 200 && status < 300, status, async json() { return body; } };
@@ -51,4 +51,19 @@ test("HTTP errors are not wrapped twice", async () => {
     provider(async () => response(400, { error: { message: "bad request" } })).complete("question"),
     (error) => error.message === "test returned 400: bad request"
   );
+});
+
+test("one Mistral key configures a medium and a small provider", () => {
+  const providers = providersFromEnv({ MISTRAL_API_KEY: "secret" });
+  assert.deepEqual(providers.map((p) => [p.name, p.model, p.baseUrl]), [
+    ["mistral", "mistral-medium-latest", "https://api.mistral.ai/v1"],
+    ["mistral-small", "mistral-small-latest", "https://api.mistral.ai/v1"]
+  ]);
+});
+
+test("Mistral models can be overridden and no key means no Mistral providers", () => {
+  const [medium, small] = providersFromEnv({ MISTRAL_API_KEY: "k", MISTRAL_MODEL: "a", MISTRAL_SMALL_MODEL: "b" });
+  assert.equal(medium.model, "a");
+  assert.equal(small.model, "b");
+  assert.deepEqual(providersFromEnv({}).map((p) => p.name), []);
 });
